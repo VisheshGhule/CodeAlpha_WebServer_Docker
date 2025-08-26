@@ -1,3 +1,24 @@
+# Deploy WebServer inside Docker container
+This project demonstrates deploying a web server using Docker on an Ubuntu EC2 instance. The setup runs an Nginx container to serve static content, providing a simple and scalable way to host web applications in a containerized environment.
+
+---
+
+## Project Overview
+- Server Node: Ubuntu EC2 instance hosting Docker.
+- Web Server: Nginx container serving static HTML content.
+- Deployment Method: Docker run command with volume mapping for HTML files.
+- Objective: Host a web server in a containerized environment for easy deployment, scalability, and management.
+
+---
+
+## Tech Stack
+- AWS EC2 (Ubuntu 22.04 LTS)
+- Docker (latest stable release)
+- Nginx (as web server)
+- HTML (static web content)
+
+---
+
 ### Step 1: Launch EC2 for Docker
 - Launch an Ubuntu 22.04 EC2 instance (t2.micro free tier is fine).
 - Security Group: allow 22 (SSH), 8080 (Custom TCP) and 80 (HTTP) from your IP.
@@ -66,6 +87,9 @@ curl http://localhost:8080
 ```
 <img width="900" height="123" alt="Screenshot from 2025-08-26 13-31-48" src="https://github.com/user-attachments/assets/733d1652-1b6c-41af-a211-b9d2e34e27db" />
 
+---
+📘 **Read the full step-by-step blog here:**  
+[Deploy Webserver inside docker](https://visheshblog.hashnode.dev/day-65-deploy-webserver-inside-docker)
 
 
 
